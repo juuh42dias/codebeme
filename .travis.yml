@@ -15,6 +15,8 @@ script:
   - bundle exec rails db:setup
   - bundle exec rails db:test:prepare
   - bundle exec rspec
-  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+after_success:
+  - bundle exec codeclimate-test-reporter
+
 notifications:
   email: false
