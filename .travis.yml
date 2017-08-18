@@ -6,10 +6,11 @@ env:
 global:
   - CC_TEST_REPORTER_ID=787a2f89b15c637323c7340d65ec17e898ac44480706b4b4122ea040c2a88f1d
   - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
-before_install: cp config/database.travis.yml config/database.yml
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
+  - cp config/database.yml.travis config/database.yml
+  - bundle exec rake db:create db:schema:load RAILS_ENV=test
 script:
   - export RAILS_ENV=test
   - bundle exec rails db:setup
