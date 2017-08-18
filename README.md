@@ -1,26 +1,13 @@
 # Travis CI [![Build Status](https://travis-ci.org/juuh42dias/codebeme.svg?branch=master)](https://travis-ci.org/juuh42dias/codebeme)
 
-# README
+# CodeClimate [![Code Climate](https://codeclimate.com/github/codeclimate/codeclimate/badges/gpa.svg)](https://codeclimate.com/github/codeclimate/codeclimate)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Test Coverage [![Test Coverage](https://codeclimate.com/github/codeclimate/codeclimate/badges/coverage.svg)](https://codeclimate.com/github/codeclimate/codeclimate/coverage)
 
-Things you may want to cover:
+# CodeBe.Me Open Website
 
-* Ruby version
+This is an open CodeBe.Me website version.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+puts "CodeBe.Me Open Site Version <3"
+```
