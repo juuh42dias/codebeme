@@ -1,7 +1,7 @@
 
 # CodeBe.Me Open Website
 
-This is an open CodeBe.Me website version.
+This is a [CodeBe.Me](http://codebe.me) open source website version.
 
 ```
 puts "CodeBe.Me Open Site Version <3"
