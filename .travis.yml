@@ -6,6 +6,7 @@ rvm:
   - 2.4.1
 env:
   - DB=postgresql
+  - CODECLIMATE_REPO_TOKEN=e66b0df388c05380eaa5e124dfbada31afcafeb30b1ba799d8c31501ea6cd60a
 global:
   - CC_TEST_REPORTER_ID=787a2f89b15c637323c7340d65ec17e898ac44480706b4b4122ea040c2a88f1d
   - GIT_COMMITTED_AT=$(if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then git log -1 --pretty=format:%ct; else git log -1 --skip 1 --pretty=format:%ct; fi)
